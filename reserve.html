@@ -1,0 +1,140 @@
+<h1>Moon Cafe</h1>
+
+  <style>
+body {
+  background: linear-gradient(135deg, #f5e6dc, #d6b8a8);
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #6b4f3b;
+  font-size: 40px;
+}
+
+p {
+  color: #6b4f3b;
+  margin-bottom: 8px;
+}
+
+input {
+  display: block;
+  margin: 0 auto 24px;
+  width: 380px;
+  height: 52px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  margin: 30px auto 0;
+  cursor: pointer;
+  padding: 16px 42px;
+  background: #6b4f3b;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.16);
+}
+button:hover {
+  transform: scale(1.05) translateY(-2px);
+  opacity: 0.95;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+ .back-btn [type="submit"] {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  input {
+    width: 90%;
+    max-width: 360px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  button {
+    width: 80%;
+    max-width: 260px;
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+}
+  .menu-img,
+  img {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .menu-card {
+    width: 90%;
+    max-width: 360px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .menu-item {
+    width: 100%;
+    font-size: 18px;
+    line-height: 2;
+    box-sizing: border-box;
+  display: inline-block;
+}
+
+.btn {
+  display: inline-block;
+  background: #6b4f3b;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  margin-top: 16px;
+}
+.btn, button {
+  padding: 10px 20px; 
+  font-size: 14px;    
+  transition: 0.2s;
+}
+button[type="submit"] {
+  padding: 12px 28px;
+  font-size: 16px;
+}
+.btn:hover, button:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+</style>
+<form action="thanks.html">
+
+<p>お名前：</p>
+  <input type="text" name="name" required>
+
+  <p>人数：</p>
+  <input type="number" name="people"required>
+
+  <p>日時：</p>
+  <input type="datetime-local" name="date" required>
+
+<button type="submit">送信</button>
+<a href="index.html" class="btn">トップに戻る</a>
+</form>
