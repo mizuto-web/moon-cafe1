@@ -8,7 +8,11 @@ body {
   background: #f5e6dc;
   text-align: center;
   margin: 0;
-  padding: 70px 20px;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -33,6 +37,11 @@ input {
   box-shadow: 0 3px 8px rgba(0,0,0,0.15);
   font-size: 18px;
   box-sizing: border-box;
+}
+
+.form-box {
+  width: 90%;
+  max-width: 500px;
 }
 
 button {
@@ -70,10 +79,10 @@ button:hover {
   }
 
   input {
-    width: 90%;
+    width: 95%;
     max-width: 420px;
-    height: 58px;
-    font-size: 18px;
+    height: 65px;
+    font-size: 20px;
   }
 
   button {
@@ -130,8 +139,11 @@ button[type="submit"] {
 </style>
 </head>
 <body>
+<div class="form-box"></div> 
 <h1>Moon Cafe</h1>
+<div class="form-box"></div>
 <form action="thanks.html">
+</div> 
 
 <p>お名前：</p>
   <input type="text" name="name" required>
@@ -144,6 +156,7 @@ button[type="submit"] {
 
 <button type="submit">送信</button>
 <a href="index.html" class="btn">トップに戻る</a>
+</div>
 </form>
 </body>
 </html>
